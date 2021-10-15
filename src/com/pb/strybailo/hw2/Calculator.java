@@ -7,12 +7,19 @@ public class Calculator {
         Scanner scan = new Scanner(System.in);
         int x ;
         int y ;
-        String sign = "+";// + - * /
+
+        String symbol = "+";// + - * /
+
         System.out.println("Введите значение x:");
         x = scan.nextInt();
+
         System.out.println("Введите значение y:");
         y = scan.nextInt();
-        switch (sign) {
+
+        System.out.println("Введите действие:");
+        symbol = scan.next();
+
+        switch (symbol) {
             case "+":
                 System.out.println( + (x + y));
                 break;
