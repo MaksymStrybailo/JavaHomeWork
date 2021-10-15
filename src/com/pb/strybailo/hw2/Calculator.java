@@ -21,22 +21,24 @@ public class Calculator {
 
         switch (symbol) {
             case "+":
-                System.out.println( + (x + y));
+                System.out.println(+(x + y));
                 break;
             case "-":
-                System.out.println( + (x - y));
+                System.out.println(+(x - y));
                 break;
             case "*":
-                System.out.println( + (x * y));
+                System.out.println(+(x * y));
                 break;
             case "/":
-                System.out.println( + (x / y));
-              if (y == 0) {
-                  System.out.println("Ошибка.На ноль делить нельзя");
-                  break;
-              }
+                if (y == 0) {
+                    System.out.println("Ошибка.На ноль делить нельзя");
+                } else if (y >0){
+                    System.out.println(+(x / y));
+                }
+                break;
+
             default:
-                System.out.println("Неверная операция");
+                System.out.println("Недопустимая операция");
 
         }
     }
