@@ -4,16 +4,25 @@ import java.util.Scanner;
 
 public class Interval {
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        int x;
+        System.out.println ("Введите число в диапазоне от 0 до 100");
+        x = scan.nextInt();
 
-        Scanner in = new Scanner(System.in);
-
-        System.out.println("Input first number: ");
-        int leftOperand = in.nextInt();
-
-        System.out.println("Input second number: ");
-        int rightOperand = in.nextInt();
-
-        System.out.println("Operator: ");
-        String operator = in.next();
+        if (x >= 0 && x <= 14){
+            System.out.println ("диапазон [0-14]");
+        }
+        if (x >= 15 && x <= 35){
+            System.out.println ("диапазон [15-35]");
+        }
+        if (x >= 36 && x <= 50){
+            System.out.println ("диапазон [36-50]");
+        }
+        if (x >= 51 && x <= 100){
+            System.out.println ("диапазон [51-100]");
+        }
+        if (x < 0 && x > 100) {
+            System.out.println("Ошибка. Выберите число из диапазона");
+        }
     }
 }
