@@ -21,7 +21,7 @@ public class Interval {
         if (x >= 51 && x <= 100){
             System.out.println ("диапазон [51-100]");
         }
-        if (x < 0 && x > 100) {
+        if (x < 0 | x > 100){
             System.out.println("Ошибка. Выберите число из диапазона");
         }
     }
