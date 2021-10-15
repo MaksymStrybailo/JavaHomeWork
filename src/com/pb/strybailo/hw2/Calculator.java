@@ -20,7 +20,7 @@ public class Calculator {
                     case "/":
                         System.out.println("Выполните" + (x / y));
                         if (y == 0) {
-                            System.out.println("Ошибка.На ноль делить нельзя");
+                        System.out.println("Ошибка.На ноль делить нельзя");
                         break;
                         }
                     default:
